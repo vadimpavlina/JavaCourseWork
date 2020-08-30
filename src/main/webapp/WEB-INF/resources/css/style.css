@@ -2321,12 +2321,14 @@
      width: 50%;
      float: left;
      padding: 0px 15px;
+
 }
  .size-st .bootstrap-select > .dropdown-toggle.btn-light{
      background: #010101;
      border: none;
      border-radius: 0px;
      color: #ffffff;
+
 }
  .quantity-box input{
      width: 100%;

@@ -179,10 +179,10 @@
                                                 <div class="type-lb">
                                                     <p class="sale">${product.productCondition}</p>
                                                 </div>
-                                                <img src="<c:url value="/resources/images/img-pro-01.jpg"/>" class="img-fluid" alt="Image">
+                                                <img src="<c:url value="/resources/images/${product.productId}.png"/>" class="img-fluid" alt="Image">
                                                 <div class="mask-icon">
                                                     <ul>
-                                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
+                                                        <li><a href="<spring:url value="/productList/viewProduct/${product.productId}"/>" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
                                                         <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
                                                         <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
                                                     </ul>
@@ -190,7 +190,8 @@
                                                 </div>
                                             </div>
                                             <div class="why-text">
-                                                <h4><a href="<spring:url value="/productList/viewProduct/${product.productId}"/>">${product.productDescription}</a></h4>
+                                                <h4><a href="<spring:url value="/productList/viewProduct/${product.productId}"/>">${product.productName}</a></h4>
+                                                <h3><a href="<spring:url value="/productList/viewProduct/${product.productId}"/>">${product.productDescription}</a></h3>
                                                 <h5> $${product.productPrice}</h5>
                                             </div>
                                         </div>
@@ -207,7 +208,7 @@
                                                     <div class="type-lb">
                                                         <p class="new">New</p>
                                                     </div>
-                                                    <img src="<c:url value="/resources/images/img-pro-01.jpg"/>" class="img-fluid" alt="Image">
+                                                    <img src="<c:url value="/resources/images/${product.productId}.png"/>" class="img-fluid" alt="Image">
                                                     <div class="mask-icon">
                                                         <ul>
                                                             <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
@@ -239,7 +240,7 @@
                                                     <div class="type-lb">
                                                         <p class="sale">Sale</p>
                                                     </div>
-                                                    <img src="<c:url value="/resources/images/img-pro-02.jpg"/>" class="img-fluid" alt="Image">
+                                                    <img src="<c:url value="/resources/images/${product.productId}.png"/>" class="img-fluid" alt="Image">
                                                     <div class="mask-icon">
                                                         <ul>
                                                             <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
@@ -271,7 +272,7 @@
                                                     <div class="type-lb">
                                                         <p class="sale">Sale</p>
                                                     </div>
-                                                    <img src="<c:url value="/resources/images/img-pro-03.jpg"/>" class="img-fluid" alt="Image">
+                                                    <img src="<c:url value="/resources/images/${product.productId}.png"/>" class="img-fluid" alt="Image">
                                                     <div class="mask-icon">
                                                         <ul>
                                                             <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
